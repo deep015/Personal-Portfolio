@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Menu, X, Home, Briefcase, Star, User, MessageSquare } from "lucide-react";
-import "../styles/hero.css";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
