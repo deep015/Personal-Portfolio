@@ -1,0 +1,8 @@
+/* Custom scroll-behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+nav a {
+  font-family: 'Inter', sans-serif;
+}

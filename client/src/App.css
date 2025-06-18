@@ -1,0 +1,6 @@
+@import "tailwindcss";
+/* CSS or tailwind utility */
+body, html, #root {
+  overflow-x: hidden;
+}
+
