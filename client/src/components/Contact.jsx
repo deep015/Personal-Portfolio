@@ -17,7 +17,7 @@ export default function Contact() {
     setStatus('loading');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/contact', form);
+      const res = await axios.post('https://personal-portfolio-f45f.onrender.com', form);
       if (res.data.success) {
         setStatus('success');
         setForm({ name: '', email: '', message: '' });
