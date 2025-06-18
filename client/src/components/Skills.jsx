@@ -1,5 +1,97 @@
 import { useRef } from 'react';
-import skills  from '../data/skills.js';
+
+const skills = [
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "NPM",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    level: "Beginner",
+  },
+  {
+    name: "Framer Motion",
+    icon: "https://framerusercontent.com/images/motion-icon.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "Redux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "Webpack",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+    level: "Intermediate",
+  },
+  {
+    name: "VS Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    level: "Advanced",
+  },
+  {
+    name: "Jest",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    level: "Beginner",
+  },
+  {
+    name: "GraphQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    level: "Beginner",
+  },
+];
 
 const getStars = (level) => {
   const levels = {
@@ -31,7 +123,6 @@ const Skills = ({ soundEnabled }) => {
         Tech Stack
       </h2>
 
-      {/* Make outer container overflow-visible to allow tooltip outside */}
       <div className="relative overflow-visible z-10">
         <div
           className="flex gap-16 whitespace-nowrap animate-marquee"
@@ -55,7 +146,6 @@ const Skills = ({ soundEnabled }) => {
               {/* Tooltip */}
               <div
                 className="absolute -top-20 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto z-[9999] bg-black/90 text-white text-xs px-3 py-2 rounded shadow-xl whitespace-nowrap text-center min-w-[110px]"
-                style={{ pointerEvents: 'auto' }} // make sure it can be hovered
               >
                 <div className="flex flex-col items-center gap-1">
                   <span className="font-semibold">{level}</span>
@@ -70,7 +160,6 @@ const Skills = ({ soundEnabled }) => {
         </div>
       </div>
 
-      {/* Sound effect */}
       <audio ref={audioRef} src="/sounds/hover.mp3" preload="auto" />
 
       <style>
