@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { skillsData } from '../data/skills.js';
+import { skillsData } from '../data/skills';
 
 const getStars = (level) => {
   const levels = {
