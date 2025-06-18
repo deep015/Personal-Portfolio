@@ -28,12 +28,12 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Your Name | Professional Portfolio</title>
+        <title> Deepraj | Professional Portfolio</title>
         <meta name="description" content="Welcome to the professional portfolio of Your Name, showcasing projects, skills, and contact information." />
-        <meta name="keywords" content="Your Name, portfolio, developer, React, JavaScript, projects, skills" />
-        <meta name="author" content="Your Name" />
-        <meta property="og:title" content="Your Name | Professional Portfolio" />
-        <meta property="og:description" content="Explore the projects, skills, and contact details of Your Name." />
+        <meta name="keywords" content=" Deepraj, portfolio, developer, React, JavaScript, projects, skills" />
+        <meta name="author" content=" Deepraj" />
+        <meta property="og:title" content=" Deepraj | Professional Portfolio" />
+        <meta property="og:description" content="Explore the projects, skills, and contact details of Deepraj." />
         <meta property="og:type" content="website" />
       </Helmet>
 
