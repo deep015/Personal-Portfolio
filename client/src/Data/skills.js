@@ -1,4 +1,4 @@
-export const skillsData = [{
+export const skills = [{
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         level: "Advanced",

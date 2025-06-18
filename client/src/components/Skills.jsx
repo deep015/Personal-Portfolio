@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { skillsData } from '../data/skills.js';
+import skills  from '../data/skills.js';
 
 const getStars = (level) => {
   const levels = {
@@ -37,7 +37,7 @@ const Skills = ({ soundEnabled }) => {
           className="flex gap-16 whitespace-nowrap animate-marquee"
           style={{ minWidth: 'max-content' }}
         >
-          {[...skillsData, ...skillsData].map(({ name, icon, level }, index) => (
+          {[...skills, ...skills].map(({ name, icon, level }, index) => (
             <div
               key={index}
               onMouseEnter={handlePlaySound}
